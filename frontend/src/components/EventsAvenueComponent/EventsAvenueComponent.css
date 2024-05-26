@@ -1,0 +1,88 @@
+.eventsAvenueWholeCont {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.eventsAvenueTopCont {
+    width: 90%;
+    min-height: 60vh;
+    gap: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventAvenueImg {
+    width: 35%;
+    height: auto;
+}
+
+.eventAvenueTopRightCont {
+    width: 60%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.eventsAvenueEventCont {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.eventAvenueName {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.eventAvenueDirector {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.eventAvenueDesc {
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.eventAvenueDescContent {
+    width: auto;
+    height: auto;
+    text-align: left;
+    text-indent: 1vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.eachEventImg {
+    width: 100%;
+    height: auto;
+}
+
+.eachEventBottomCont {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.eachEventBottomContTitle {
+    width: 100%;
+    height: auto;
+    font-size: 1.25rem;
+}

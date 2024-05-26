@@ -1,0 +1,24 @@
+.carouselWholeCont {
+    width: 100%;
+    height: 85vh;
+    margin-bottom: 10vh;
+}
+
+.eachCont {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.video {
+    position: relative;
+    width: 100;
+    height: 100%;
+    padding-left: 37%;
+    border: none;
+    outline: none;
+}

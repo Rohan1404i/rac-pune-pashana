@@ -1,0 +1,83 @@
+.searchWholeCont {
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    right: 2vh;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchIcon {
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.openSearchCont {
+    position: absolute;
+    width: 35vh;
+    height: 5vh;
+    right: 5vh;
+    border-radius: 25px;
+}
+
+.searchInputBar {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    color: #676767;
+    font-size: 1rem;
+    text-indent: 1vh;
+    border: none;
+    outline: none;
+    animation: openSearchModal 0.5s forwards ease-in-out;
+}
+
+.searchDropDown {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.eachSearchDropDown {
+    width:95%;
+    height: auto;
+    margin: 0.25vh 0;
+    padding: 0 1vh;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.eachSearchDropDownText {
+    font-size: 0.9rem;
+    color: #676767;
+}
+
+.eachSearchDropDown:hover {
+    background-color: #eaeaea;
+}
+.eachSearchDropDown:hover .eachSearchDropDownText {
+    font-size: 1rem;
+}
+
+@keyframes openSearchModal {
+    from {
+        width: 5vh;
+    }
+    to {
+        width: 35vh;
+    }
+}

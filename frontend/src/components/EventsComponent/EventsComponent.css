@@ -1,0 +1,119 @@
+.eventsWholeCont {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.eventsTitle {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 3vh;
+}
+
+hr{
+    width: 35%;
+    border-top: 1px solid #f5b921;
+    margin-bottom: 20px;
+}
+
+.eventsCont {
+    width: 100%;
+    min-height: 60vh;
+    margin: 10vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.eachEventCont {
+    width: 15vh;
+    height: 60vh;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: closeBox 0.5s forwards ease-in-out;
+    cursor: pointer;
+}
+.eachEventContSelected {
+    width: 15vh;
+    height: 60vh;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: openBox 0.5s forwards ease-in-out;
+    cursor: pointer;
+}
+
+.eachEventTitle {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+}
+.eachEventDate {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+@keyframes openBox {
+    from {
+        width: 15vh;
+    }
+    to {
+        width: 50vh;
+    }
+}
+
+@keyframes closeBox {
+    from {
+        width: 50vh;
+    }
+    to {
+        width: 15vh;
+    }
+}
+
+@keyframes openVerticalBox {
+    from {
+        height: 15vh;
+    }
+    to {
+        height: 50vh;
+    }
+}
+
+@keyframes closeVerticalBox {
+    from {
+        height: 50vh;
+    }
+    to {
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .eventsCont {
+        flex-direction: column;
+    }
+    .eachEventCont {
+        width: 50vh;
+        background-position: top;
+        animation: closeVerticalBox 0.5s forwards ease-in-out;
+    }
+    .eachEventContSelected {
+        width: 50vh;
+        background-position: top;
+        animation: openVerticalBox 0.5s forwards ease-in-out;
+    }
+}
