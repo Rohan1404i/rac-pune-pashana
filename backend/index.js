@@ -6,6 +6,7 @@ const { checkKey } = require('./middleware/header');
 const userRoute = require('./routes/users');
 const eventRoute =require('./routes/events')
 const blogRoute = require('./routes/blogs')
+const expressionsRoute = require('./routes/expressions');
 
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(cors());
 app.use('/user', checkKey, userRoute);
 app.use('/events', checkKey, eventRoute);
 app.use('/blogs',checkKey,blogRoute)
+app.use('/expressions', expressionsRoute);
 
 const port = process.env.PORT || 8000;
 server.listen(port, () => {

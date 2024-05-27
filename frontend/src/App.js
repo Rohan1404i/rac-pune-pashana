@@ -12,6 +12,7 @@ import AllBlogsComponent from "./components/AllBlogsComponent";
 import EventsAvenueComponent from "./components/EventsAvenueComponent";
 import { useEffect, useState } from "react";
 import ExpressionDetection from "./components/ExpressionDetection";
+import MentalHealthQuiz from "./components/MentalHealthQuiz";
 
 function App() {
 
@@ -43,7 +44,8 @@ function App() {
           <Route exact path="/blogs" element={<AllBlogsComponent yScroll={yScroll} />} />
           <Route exact path="/blogs/:blogId" element={<BlogsComponent yScroll={yScroll} />} />
           <Route exact path="/events/:avenueId" element={<EventsAvenueComponent yScroll={yScroll} />} />
-          <Route exact path="/expression" element={<ExpressionDetection />} />
+          {/* <Route exact path="/expression" element={<ExpressionDetection />} /> */}
+          <Route exact path="/quiz" element={ <MentalHealthQuiz />} />
           {/* <Route exact path="/events/:avenue" element={<BlogsComponent />} /> */}
         </Routes>
       </Router>
